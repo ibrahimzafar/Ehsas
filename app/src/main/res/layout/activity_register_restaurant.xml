@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="50dp"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterRestaurant">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:textSize="25sp"
+            android:text="Register as a Food Donor" />
+    </RelativeLayout>
+    <EditText
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:hint="Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:textSize="20sp"
+        android:hint="Contact Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textSize="20sp"
+        android:hint="Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20sp"
+            android:text="Serving capacity (persons): "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:hint="   5   "
+            android:textSize="20sp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="20sp"
+                android:text="I can provide food: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="15sp"
+                android:text="If you choose Other, mention in detail in Comments"
+                android:layout_width="220dp"
+                android:singleLine="false"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <Spinner
+            android:layout_gravity="top"
+            android:textSize="20sp"
+            android:id="@+id/foodFrequencyDropDown"
+            android:layout_marginLeft="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20sp"
+            android:text="I can start from: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:hint="DD/MM/YYYY"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:hint="Additional Comments"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+    <Button
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:backgroundTint="@color/themeColor1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
